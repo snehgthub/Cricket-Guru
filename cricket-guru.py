@@ -6,6 +6,11 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 import streamlit as st
 import os
 
+st.set_page_config(
+    page_title="Cricket Guru🏏",
+    page_icon="🏏",
+)
+
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 langchain_api_key = st.sidebar.text_input("Langchain API Key", type="password")
 
