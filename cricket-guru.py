@@ -7,7 +7,7 @@ import streamlit as st
 import os
 
 st.set_page_config(
-    page_title="Cricket Guru🏏",
+    page_title="Cricket Guru",
     page_icon="🏏",
 )
 
