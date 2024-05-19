@@ -12,9 +12,8 @@ st.set_page_config(
 )
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
-langchain_api_key = st.sidebar.text_input("Langchain API Key", type="password")
 
-os.environ["LANGCHAIN_API_KEY"] = langchain_api_key
+os.environ["LANGCHAIN_API_KEY"] = st.secrets["langchain_api_key"]
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "cricket-bot"
 
